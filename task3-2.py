@@ -6,6 +6,9 @@
 
 from random import randint as rnd
 def randomize(input_list, qtys):
+    """Функция для создания массива со случайными целыми числами из пустого входящего массива.
+    На входе ожидается пустой массив и количество элементов, которое должно быть сгенерировано
+    """
     i = 0
     qtys = int(qtys)
     input_list = []
@@ -15,8 +18,9 @@ def randomize(input_list, qtys):
     return input_list
     
 def mult_elem (input_list):
+    """Функция возвращает массив из значений, где каждое значение = входящиймассив[индекс]*входящиймассив[размер массива - индекс]
+    На входе ожидает массив"""
     i=0
-    sum=0
     multiplied_list = []
     while i<=len(input_list)%2+1:
         multiplied_list.append(input_list[i]*input_list[len(input_list)-i-1])

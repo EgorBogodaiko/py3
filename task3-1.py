@@ -4,6 +4,9 @@
 
 from random import randint as rnd
 def randomize(input_list, qtys):
+    """Функция для создания массива со случайными целыми числами из пустого входящего массива.
+    На входе ожидается пустой массив и количество элементов, которое должно быть сгенерировано
+    """
     i = 0
     qtys = int(qtys)
     input_list = []
@@ -13,6 +16,7 @@ def randomize(input_list, qtys):
     return input_list
     
 def sum_elem (input_list):
+    """ Находит сумму нечётных элементов массива"""
     i=1
     sum=0
     while i<len(input_list):

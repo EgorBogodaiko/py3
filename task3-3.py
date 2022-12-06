@@ -6,6 +6,8 @@
 from random import randint as rnd
 
 def real_fill(input_array, qty):
+    """Заполняет массив случайными вещественными числами с 5 значящими символами
+    На входе ожидает пустой массив, который нужно заполнить и количество элементов, которое нужно сгенерировать"""
     i = 0
     while i < qty:
         input_array.append(round(rnd(1, 10)+float(2*1/rnd(1, 10)) +
@@ -14,6 +16,8 @@ def real_fill(input_array, qty):
     return input_array
 
 def dif_float(input_array):
+    """Находит разницу между максимальным и минимальным значением дробной части элементов входного массива
+    На входе ожидает массив из вещественных чисел"""
     max = input_array[0]-int(input_array[0])
     min = max
     i = 0

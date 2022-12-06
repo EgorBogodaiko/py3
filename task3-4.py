@@ -6,6 +6,9 @@
 # 2 -> 10
 import math
 def to_bin(input_decimal,i):
+    """Переводит десятичное число в двоичную систему счисления
+    На входе ожидает положительное целое число"""
+    
     if (input_decimal< 0):
             return "Не переводится"
     elif (input_decimal> 0):
